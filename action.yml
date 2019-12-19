@@ -1,8 +1,12 @@
 name: Python Pylint Github Action
 description: 'Pylint Github Action running on python slim docker image'
-icon: box
-color: gray-dark
+branding:
+  icon: box
+  color: gray-dark
 runs-on: ubuntu-latest
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
 steps:
 - uses: actions/checkout@master
 - name: Python Pylint Github Action

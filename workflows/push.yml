@@ -1,0 +1,12 @@
+on: push
+name: on push
+jobs:
+  pythonPylintGithubAction:
+    name: Python Pylint Github Action
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Python Pylint Github Action
+      uses: cclauss/GitHub-Action-for-pylint@master
+      with:
+        args: pylint --help

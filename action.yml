@@ -1,15 +1,11 @@
-on: push
-name: on push
-jobs:
-  pythonPylintGithubAction:
-    name: Python Pylint Github Action
-    description: 'Pylint Github Action running on python slim docker image'
-    icon: box
-    color: gray-dark
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@master
-    - name: Python Pylint Github Action
-      uses: fylein/python-pylint-github-action@master
-      with:
-        args: pylint --help
+name: Python Pylint Github Action
+description: 'Pylint Github Action running on python slim docker image'
+icon: box
+color: gray-dark
+runs-on: ubuntu-latest
+steps:
+- uses: actions/checkout@master
+- name: Python Pylint Github Action
+  uses: fylein/python-pylint-github-action@master
+  with:
+    args: pylint --help

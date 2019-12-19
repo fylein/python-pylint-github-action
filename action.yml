@@ -3,6 +3,9 @@ name: on push
 jobs:
   pythonPylintGithubAction:
     name: Python Pylint Github Action
+    description: Pylint action for GitHub with Slim docker image to run pandas and numpy
+    icon: box
+    color: gray-dark
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master

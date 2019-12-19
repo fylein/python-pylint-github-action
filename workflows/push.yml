@@ -7,6 +7,6 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Python Pylint Github Action
-      uses: cclauss/GitHub-Action-for-pylint@master
+      uses: fylein/python-pylint-github-action@master
       with:
         args: pylint --help

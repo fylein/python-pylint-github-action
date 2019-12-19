@@ -3,7 +3,7 @@ name: on push
 jobs:
   pythonPylintGithubAction:
     name: Python Pylint Github Action
-    description: Pylint with slim docker image 
+    description: 'Pylint Github Action running on python slim docker image'
     icon: box
     color: gray-dark
     runs-on: ubuntu-latest

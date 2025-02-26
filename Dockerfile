@@ -1,4 +1,4 @@
-FROM python:3.7.4-slim
+FROM python:3.13-slim
 
 LABEL "com.github.actions.name"="GitHub Action for Python Pylint"
 LABEL "com.github.actions.description"="Run pylint commands on python slim image"
